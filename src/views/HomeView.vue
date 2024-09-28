@@ -33,7 +33,7 @@
     <div class="flex justify-center md:justify-start fadein-right">
       <img alt="avatar" fetchpriority="high" width="300" height="300" decoding="async" data-nimg="1"
         class="w-10/12 md:h-auto rounded-full border-4 border-[#90E0EF] pict"
-        src="/img/avatar-anime-450x450.jpg" />
+        :src="getImagePath('avatar-anime-450x450.jpg')" />
     </div>
   </main>
 </template>
@@ -96,6 +96,11 @@ export default {
         that.tick();
       }, delta);
     },
+    getImagePath(imageUrl) {
+      return process.env.NODE_ENV === 'production'
+        ? `/portfolio-vue/img/${imageUrl}`
+        : `/img/${imageUrl}`;
+    }
   },
 };
 </script>

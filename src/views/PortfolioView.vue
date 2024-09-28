@@ -69,16 +69,24 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    getImagePath(imageUrl) {
+      // Jika dalam environment production, gunakan path sesuai dengan subdirectory GitHub Pages
+      return process.env.NODE_ENV === 'production'
+        ? `/portfolio-vue/img/portfolio-${imageUrl}.png`
+        : `/img/portfolio-${imageUrl}.png`;
+    }
   }
 }
 </script>
+
 <template>
   <div class="px-5 py-5 md:px-12 md:py-10 text-left text-white mx-3">
     <article data-page="about">
       <header>
         <div
           class="text-2xl font-bold text-white mb-10 fadein-bot title-section flex items-center justify-center flex-col">
-          <!-- <div class="h-[1px] w-10 bg-[#90E0EF] md:w-20 aos-init aos-animate"></div> -->
           <h4>Past Project Experience</h4>
           <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-[#48CAE4]">
             Explore the projects I've worked on so far</h4>
@@ -91,8 +99,8 @@ export default {
               <div
                 class="item-card flex flex-col items-center gap-2 rounded bg-[#1e1e1f] hover:bg-[#282828] border border-[#383838] rounded-xl text-white md:gap-3 px-5 py-5 lg:px-5 ">
                 <div class="flex h-12 w-12 items-center justify-center p-0 h-full w-full lg:p-0 zoom-in">
-                  <img alt="HTML" loading="lazy" decoding="async" data-nimg="1" class="drop-shadow-xl rounded rounded-xl"
-                    :src="'/img/portfolio-' + item.imageUrl + '.png'">
+                  <img :alt="`Gambar ${item.name}`" loading="lazy" decoding="async" data-nimg="1" class="drop-shadow-xl rounded rounded-xl"
+                    :src="getImagePath(item.imageUrl)">
                 </div>
                 <div class="w-full flex flex-col gap-2 items-center text-sm md:text-base lg:text-lg">
                   <div class="title-text font-medium text-secondary">{{ item.name }}
@@ -131,7 +139,8 @@ export default {
       </div>
     </section>
   </article>
-</div></template>
+</div>
+</template>
 
 <style>
 .item-card:hover {
@@ -152,7 +161,6 @@ svg:hover{
   }
 }
 
-/* Menggunakan animasi pada elemen yang diinginkan */
 .fade-zoom-in {
   animation: fadeZoomIn 1s ease-in-out;
 }

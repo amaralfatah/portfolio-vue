@@ -98,6 +98,14 @@ export default {
         },
       ]
     };
+  },
+  methods: {
+    getImagePath(imageUrl) {
+      // Jika dalam environment production, gunakan path sesuai dengan subdirectory GitHub Pages
+      return process.env.NODE_ENV === 'production'
+        ? `/portfolio-vue/img/${imageUrl}`
+        : `/img/${imageUrl}`;
+    }
   }
 }
 </script>
@@ -118,7 +126,7 @@ export default {
         class="text-sm md:text-lg text-justify flex flex-col gap-4 md:flex-row md:gap-8 md:justify-left md:items-center">
         <div class="flex justify-center">
           <img class="w-9/12 rounded-full mb-3 fadein-up"
-            src="/img/avatar-anime-450x450.jpg" alt="Foto">
+            :src="getImagePath('avatar-anime-450x450.jpg')" alt="Foto">
         </div>
         <div class="md:w-7/12">
           <p class="mb-3 md:mb-7 fadein-left fadeins-1">
