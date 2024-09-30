@@ -24,6 +24,15 @@ export default {
         },
         {
           id: 3,
+          name: 'Presensi Seven Inc',
+          imageUrl: 'presensi-seven-inc',
+          status: 'Website ini membantu mengelola karyawan di Seven Inc. Dengan fitur presensi, penggajian, dan manajemen karyawan, Seven Inc dapat mengelola karyawan dengan lebih efisien.',
+          tech: 'Laravel, Bootstrap',
+          github: 'null',
+          demo: 'null'
+        },
+        {
+          id: 4,
           name: 'Trebez App',
           imageUrl: 'trebez-app',
           status: 'Trebez App adalah aplikasi edukasi keselamatan berkendara yang membantu Anda menjadi pengemudi yang lebih bertanggung jawab dan terampil.',
@@ -32,7 +41,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 4,
+          id: 5,
           name: 'Sistem Inklusi Aisyiyah',
           imageUrl: 'inklusi-aisyiyah',
           status: 'Sistem Inklusi Aisyiyah adalah situs web yang digunakan untuk melaporkan data inklusi di Aisyiyah seluruh Indonesia.',
@@ -41,7 +50,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 5,
+          id: 6,
           name: 'Helpdesk BSI',
           imageUrl: 'helpdesk-bsi',
           status: 'Helpdesk BSI adalah situs web yang digunakan untuk mencatat keluhan dan permintaan bantuan dari mahasiswa.',
@@ -50,7 +59,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 6,
+          id: 7,
           name: 'Sistem Karyawan',
           imageUrl: 'sistem-karyawan',
           status: 'Sistem Karyawan adalah situs web yang memudahkan pengelolaan karyawan, mulai dari data karyawan, absensi, jabatan, hingga penggajian.',
@@ -59,7 +68,7 @@ export default {
           demo: 'null'
         },
         {
-          id: 7,
+          id: 8,
           name: 'Posyandu Melati',
           imageUrl: 'posyandu-melati',
           status: 'Posyandu Melati adalah situs web yang memindahkan proses pelaporan posyandu ke platform daring, sekaligus melakukan analisis data dan menghasilkan Kartu Menuju Sehat sebagai output.',
@@ -74,7 +83,7 @@ export default {
     getImagePath(imageUrl) {
       // Jika dalam environment production, gunakan path tanpa subdirektori GitHub Pages
       return process.env.NODE_ENV === 'production'
-        ? `/img/portfolio-${imageUrl}.png`
+        ? `/portfolio-vue/img/portfolio-${imageUrl}.png`
         : `/img/portfolio-${imageUrl}.png`;
     }
   }
