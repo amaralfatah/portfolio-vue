@@ -8,7 +8,7 @@ export default {
           id: 1,
           name: 'FreshCheck App',
           imageUrl: 'freshcheck-app',
-          status: 'Cegah pembelian buah dan sayuran yang tidak segar! FreshCheck App menggunakan AI untuk menilai kesegaran bahan makanan Anda secara instan.',
+          status: 'Cegah pembelian buah dan sayuran yang tidak segar! FreshCheck App memanfaatkan kecerdasan buatan untuk menilai kesegaran bahan makanan Anda dalam sekejap.',
           tech: 'Kotlin, XML',
           github: 'aasss',
           demo: 'ss'
@@ -17,7 +17,7 @@ export default {
           id: 2,
           name: 'DexShop App',
           imageUrl: 'dexshop-app',
-          status: 'DexShop App membantu mengelola inventaris toko pakaian Anda dengan mudah. Aplikasi ini mengoptimalkan stok, memberikan pengingat pesanan, dan meningkatkan penjualan dengan solusi yang inovatif.',
+          status: 'DexShop App memudahkan pengelolaan inventaris toko pakaian Anda. Aplikasi ini mengoptimalkan stok, memberikan pengingat untuk pesanan, dan meningkatkan penjualan dengan solusi inovatif.',
           tech: 'Kotlin, XML',
           github: 'null',
           demo: 'null'
@@ -26,7 +26,7 @@ export default {
           id: 3,
           name: 'Presensi Seven Inc',
           imageUrl: 'presensi-seven-inc',
-          status: 'Website ini membantu mengelola karyawan di Seven Inc. Dengan fitur presensi, penggajian, dan manajemen karyawan, Seven Inc dapat mengelola karyawan dengan lebih efisien.',
+          status: 'Website ini dirancang untuk mengelola karyawan di Seven Inc. Dengan fitur presensi, penggajian, dan manajemen karyawan, proses pengelolaan menjadi lebih efisien.',
           tech: 'Laravel, Bootstrap',
           github: 'null',
           demo: 'null'
@@ -44,7 +44,7 @@ export default {
           id: 5,
           name: 'Sistem Inklusi Aisyiyah',
           imageUrl: 'inklusi-aisyiyah',
-          status: 'Sistem Inklusi Aisyiyah adalah situs web yang digunakan untuk melaporkan data inklusi di Aisyiyah seluruh Indonesia.',
+          status: 'Sistem Inklusi Aisyiyah adalah situs web untuk melaporkan data inklusi di Aisyiyah di seluruh Indonesia.',
           tech: 'Codeigniter 3, Bootstrap',
           github: 'null',
           demo: 'null'
@@ -53,7 +53,7 @@ export default {
           id: 6,
           name: 'Helpdesk BSI',
           imageUrl: 'helpdesk-bsi',
-          status: 'Helpdesk BSI adalah situs web yang digunakan untuk mencatat keluhan dan permintaan bantuan dari mahasiswa.',
+          status: 'Helpdesk BSI adalah situs web untuk mencatat keluhan dan permintaan bantuan dari mahasiswa secara efisien.',
           tech: 'Codeigniter 3, Bootstrap',
           github: 'null',
           demo: 'null'
@@ -62,18 +62,27 @@ export default {
           id: 7,
           name: 'Sistem Karyawan',
           imageUrl: 'sistem-karyawan',
-          status: 'Sistem Karyawan adalah situs web yang memudahkan pengelolaan karyawan, mulai dari data karyawan, absensi, jabatan, hingga penggajian.',
+          status: 'Sistem Karyawan adalah situs web yang mempermudah pengelolaan data karyawan, mulai dari absensi hingga penggajian.',
           tech: 'Laravel, Bootstrap',
-          github: 'null',
+          github: 'https://github.com/amaralfatah/sistem-karyawan',
           demo: 'null'
         },
         {
           id: 8,
           name: 'Posyandu Melati',
           imageUrl: 'posyandu-melati',
-          status: 'Posyandu Melati adalah situs web yang memindahkan proses pelaporan posyandu ke platform daring, sekaligus melakukan analisis data dan menghasilkan Kartu Menuju Sehat sebagai output.',
+          status: 'Posyandu Melati adalah situs web yang memindahkan proses pelaporan posyandu ke platform daring, melakukan analisis data, dan menghasilkan Kartu Menuju Sehat sebagai output.',
           tech: 'Laravel, Bootstrap',
           github: 'null',
+          demo: 'null'
+        },
+        {
+          id: 9,
+          name: 'CryptoMind App',
+          imageUrl: 'cryptomind',
+          status: 'CryptoMind adalah aplikasi pembelajaran yang memperkenalkan algoritma kriptografi modern, yaitu Cipher Feedback (CFB). Aplikasi ini berisi materi, visualisasi algoritma, dan latihan soal.',
+          tech: 'Kotlin, XML',
+          github: 'https://github.com/amaralfatah/CryptoMind',
           demo: 'null'
         }
       ]
